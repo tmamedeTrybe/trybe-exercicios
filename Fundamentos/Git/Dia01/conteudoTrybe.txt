@@ -3,3 +3,5 @@
 - Git
 - Html
 - CSS
+- Liderança
+- Inteligência emocional
