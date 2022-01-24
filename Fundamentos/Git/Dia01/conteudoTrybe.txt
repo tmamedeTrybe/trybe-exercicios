@@ -1,5 +1,7 @@
 - Unix
 - Bash
 - Git
+- Html
+- CSS
 - Liderança
 - Inteligência emocional
