@@ -1,47 +1,11 @@
-div:hover {
-    border: 2px solid red;
+.listafrases li {
+    background-color: yellow;
+    font-size: 1em;
 }
-div:nth-child(3){
-    color: red;
-    
+.intemPar{
+  color: green;;
 }
-div:nth-child(4){
-    color: green;
-    border: solid 2px black;
-}
-div:nth-child(5){
-    color: blue;
-    border: solid black 2px;
-    padding: 90px;
-}
-div:nth-child(6){
-    color: yellow;
-}
-div:nth-child(7){
-    color: grey;
-}
-div h3:nth-child(3){
-    text-decoration: underline;;
-}
-div h3:nth-child(1){
-    font-size: 60px;
-}
-div:nth-child(3) h3{
-    text-decoration: underline;
-}
-div:nth-child(4) h3{
-    font-family: fantasy;
-}
-div:nth-child(5) h3{
-    font-style:oblique;
-}
-div:nth-child(6) h3{
+
+.intemImpar{
     text-transform: uppercase;
-}
-div:nth-child(7) h3{
-    text-transform: uppercase;
-    font-family: monospace;
-}
-div:nth-child(2n-1) h3{
-    font-style: italic;
 }
