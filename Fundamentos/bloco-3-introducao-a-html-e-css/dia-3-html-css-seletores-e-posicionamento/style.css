@@ -1,32 +1,51 @@
-.caixa {
-    color: white;
-    display: inline-block;
-    line-height: 50px;
-    text-align: center;
-    vertical-align: top;
-  }
-  
-  .width-and-height {
-    height: 50px;
-    width: 50px;
+.listafrases li {
+    background-color: yellow;
+    font-size: 1em;
+}
+.intemPar{
+  color: green;;
+}
 
+.intemImpar{
+    text-transform: uppercase;
+}
+h1, h2, h3, h4 {
+    color: red;;
+}
+h1 em{
+    font-size: 40px;
+    border: 1px solid black;
 
-  }
-  
-  /* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
-  .padding {
-    padding: 20px;
-  
-  }
-  
-  /* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
-  .margin {
-    margin: 30px;    
-  
-  }
-  
-  /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
-  .border {
-    border: 5px solid black;
-    
-  }
+}
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+#stack a:hover{
+    font-weight: bold;
+    color:orange;
+
+}
+#w3s a:hover{
+    font-weight: bold;
+    color:green;
+}
+#w3s a:hover{
+    font-weight: bold;
+    color:green;
+}
+#mdn a:hover{
+    font-weight: bold;
+    color:black;
+}
+#devdocs a:hover{
+    font-weight: bold;
+    color:yellow;
+}
+#trybe a:hover{
+    font-weight: bold;
+    color:green;
+}
+
