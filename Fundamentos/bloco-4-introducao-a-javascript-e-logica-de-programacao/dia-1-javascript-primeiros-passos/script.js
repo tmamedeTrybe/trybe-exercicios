@@ -46,7 +46,7 @@ if (angulo01 + angulo02 + angulo03 == 180) {
     console.log ("Error")
 }*/
 
-let peca = 'RAINHA';
+/*let peca = 'RAINHA';
 peca = (peca.toLowerCase());
 switch (peca){
     case 'bispo':
@@ -60,7 +60,35 @@ switch (peca){
         break;
     default:
         console.log ('Mensagem de erro');
+}*/
+
+/*const nota = 72;
+if (nota >=90){
+    console.log("A");
+} else if (nota >=80 && nota < 90){
+    console.log("B");
+}else if (nota >= 70 && nota <80){
+    console.log ("C");
+} else if (nota >= 60 && nota < 70){
+    console.log ("D");
+}else if (nota >= 50 && nota < 60){
+    console.log ("E");
+}else if (nota < 50 && nota > 0){
+    console.log("F")
+}else if (nota < 0 || nota > 100){
+    console.log("ERROR")
+}*/
+
+const numb6 = 5;
+const numb7 = 7;
+const numb8 = 8;
+if (numb6 %2 == 0 || numb7 %2 == 0 || numb8 %2 == 0){
+    console.log ('true');
+} else {
+    console.log ('false');
 }
+
+
 
 
 
