@@ -79,14 +79,28 @@ if (nota >=90){
     console.log("ERROR")
 }*/
 
-const numb6 = 5;
+/*const numb6 = 5;
 const numb7 = 7;
 const numb8 = 8;
 if (numb6 %2 == 0 || numb7 %2 == 0 || numb8 %2 == 0){
     console.log ('true');
 } else {
     console.log ('false');
-}
+}*/
+
+/*const numb9 = 14;
+const numb10 = 20;
+const numb11 = 44;
+if( numb9 %2 == 1 || numb10 %2 == 1 || numb11 %2 ==1){
+    console.log ('true');
+} else {
+    console.log ('false');
+}*/
+
+const custo = 50;
+const valorVenda = 350;
+
+
 
 
 
