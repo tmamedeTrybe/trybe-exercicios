@@ -33,7 +33,7 @@ console.log (menorPalavra);*/
 
 // Exercicio 04
 
-let maiorNumeroPrimo = 0;
+/*let maiorNumeroPrimo = 0;
 let contador = 0;
 for (let index = 0; index <= 50; index += 1){
     for (let divisor = 1; divisor <= index; divisor += 1){
@@ -46,4 +46,4 @@ for (let index = 0; index <= 50; index += 1){
 }
 }
 
-console.log(maiorNumeroPrimo);
+console.log(maiorNumeroPrimo);*/
