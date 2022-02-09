@@ -66,8 +66,9 @@
 
  console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos.");
 */
+//FUNÇÕES
 
-//Exercicio 08
+//Exercicio 01
 
 /*let word = 'thiago';
 let splitWord = word.split('');
@@ -92,7 +93,7 @@ function verificaPalindromo (palavra){
 }
 console.log(verificaPalindromo('amam'));
 
-// Exercicio 9
+// Exercicio 02
 
 function retorneIndiceMaiorValor(array){
     let maiorValor = [0];
@@ -106,7 +107,7 @@ function retorneIndiceMaiorValor(array){
 }
 console.log(retorneIndiceMaiorValor([210, 450, 6, 80, 10, 1001]));
 
-// Exercicio 10
+// Exercicio 03
 
 
 function retorneIndiceMenorValor(array){
@@ -120,5 +121,18 @@ function retorneIndiceMenorValor(array){
     return array.indexOf(menorValor);
 }
 console.log(retorneIndiceMenorValor([2, 4, 6, 7, 10, 0, -3]));
+
+// Exercicio 04
+function retorneNomeMaior(array){
+    let maiorPalavra = [0];
+    for (let indice = 0; indice < array.length; indice += 1 ){
+        if (array[indice].length > array.length){
+            maiorPalavra = array[indice];
+        }
+    }
+    return maiorPalavra;
+}
+console.log(retorneNomeMaior(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Maria Auxiliadora']));
+
 
 
