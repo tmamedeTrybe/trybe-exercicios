@@ -101,8 +101,15 @@
 
                 lista.appendChild(itensElementos);
           }
-          
-
+        
+        function createh3(element, number){
+            for(let index = 1; index <= number; index += 1){
+            let newtitle3 = document.createElement('h3');
+            element.appendChild(newtitle3);
+        }
+    }
+        createh3(newSectionRight,3);
+        
 
     </script>
   </body>
