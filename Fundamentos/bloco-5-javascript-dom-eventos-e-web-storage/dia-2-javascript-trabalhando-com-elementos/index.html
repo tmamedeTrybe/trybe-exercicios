@@ -109,6 +109,27 @@
         }
     }
         createh3(newSectionRight,3);
+
+        newTitle.className = 'title';
+
+        let paragraphs = document.getElementsByTagName('h3');
+        for (let index = 0; index < paragraphs.length; index += 1){
+            paragraphs[index].className = 'description';
+        }
+        
+        tagMain.removeChild(newSectionLeft);
+
+        newSectionRight.style.marginRight = 'auto';
+        newSection.style.background = "green";
+
+        let ultimoItem = document.querySelector('.list-right-content').lastChild;
+
+        lista.removeChild(ultimoItem);
+
+        lista.lastChild.remove();
+
+        
+
         
 
     </script>
