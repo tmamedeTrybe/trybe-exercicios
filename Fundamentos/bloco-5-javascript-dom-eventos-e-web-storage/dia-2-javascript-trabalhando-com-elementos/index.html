@@ -65,7 +65,13 @@
       let tagMain = document.createElement('main');
       tagMain.className = 'main-content';
       container.appendChild(tagMain);
-      
+
+      let containerMain = document.getElementsByTagName('main')[0];
+      let newSection = document.createElement('section');
+      newSection.className = 'center-content';
+      containerMain.appendChild(newSection);
+
+
     </script>
   </body>
 </html>
