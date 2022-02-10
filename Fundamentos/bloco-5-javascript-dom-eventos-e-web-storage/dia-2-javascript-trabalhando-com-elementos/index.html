@@ -87,6 +87,21 @@
       image.className = 'small-image';
       newSectionLeft.appendChild(image);
 
+      let lista = document.createElement('ul');
+      lista.className = "list-right-content";
+      newSectionRight.appendChild(lista);
+
+      let numbers = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'sete', 'Oito', 'Nove', 'Dez'];
+      
+          for (let index = 0; index < numbers.length; index += 1){
+              let itemDaLista = numbers[index];
+
+                let itensElementos = document.createElement('li');
+                itensElementos.innerText = itemDaLista;
+
+                lista.appendChild(itensElementos);
+          }
+          
 
 
     </script>
