@@ -108,3 +108,33 @@ function adicionaLegenda(string){
   containerLegenda.appendChild(divLegenda);
 }
 adicionaLegenda('green');
+
+function alteraClasse(){
+  let tagTarefa = document.querySelector('.task');
+  tagTarefa.addEventListener('click', function (){
+    if( tagTarefa.className === 'task'){
+      tagTarefa.classList.add('selected')
+    } else if (tagTarefa.className === 'task selected'){
+      tagTarefa.classList.remove ('selected');
+    }
+  });
+}
+alteraClasse();
+
+function determinaCorDia (){
+  let divSelecionada = document.getElementsByClassName('task selected');
+  let dias = document.querySelector('#days');
+  let divNaoSelecionada = document.querySelector('.task');
+  let corNaoSelecionada = divNaoSelecionada.style.backgroundColor;
+
+  dias.addEventListener('click', function(event){
+    let corDoClicado = event.target.style.color;
+    if (divSelecionada.length > 0 && corDoClicado !== corNaoSelecionada){
+      let corSelecionada = divSelecionada[0].style.backgroundColor;
+      corDoClicado = corSelecionada;
+    } else if (corDoClicado === corNaoSelecionada && divNaoSelecionada.length !== 0){
+      corDoClicado.style.color = 'rgb(119, 119, 119)';
+    }
+  });
+};
+determinaCorDia();
