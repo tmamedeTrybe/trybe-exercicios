@@ -34,9 +34,27 @@ createDaysOfTheMonth();
 
 function createButton(string){
     let containerButton = document.querySelector('.buttons-container');
-    let button = document.createElement('button');
-    button.id = 'btn-holiday';
-    button.innerText = string;
-    containerButton.appendChild(button);
+    let buttonFeriado = document.createElement('button');
+    buttonFeriado.id = 'btn-holiday';
+    buttonFeriado.innerText = string;
+    containerButton.appendChild(buttonFeriado);
 ;}
 createButton('Feriados');
+
+let getHolidayButton = document.querySelector ('#btn-holiday');
+getHolidayButton.addEventListener('click', changeHolidayColor);
+
+function changeHolidayColor() {
+  let holidays = document.querySelectorAll('.holiday');
+  for(let index = 0; index < holidays.length; index += 1){
+       if(holidays[index].style.backgroundColor === 'white'){
+      holidays[index].style.backgroundColor = "rgb(238,238,238)";
+    } else{ holidays[index].style.backgroundColor = 'white'
+
+    }
+  
+  }
+  }
+  
+
+  
