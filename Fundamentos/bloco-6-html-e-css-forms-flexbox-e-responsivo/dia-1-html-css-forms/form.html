@@ -5,30 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrybeTrip</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/DatePickerX-master/dist/css/DatePickerX.min.css">
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 </head>
-<body>
-    <header>Formulário</header>
-    <div id="container-form">
-        <form action="" method="get" id="formulario">
-            <label for="user-name">Nome:<input minlength="10" maxlength="40" type="text" name="nome" id="user-name"></label>
+<body >
+    <header class="form-label" >Formulário</header>
+    <div  id="container-form">
+        <form  action="" method="get" id="formulario" id="form">
+            <label for="user-name">Nome:<input minlength="10" maxlength="40" type="text" name="nome" id="#name"></label>
             <br>
             <label for="user-email">Email:<input minlength="10" maxlength="50" type="email" name="email" id="user-email"></label>
             <p id="title-destino">Destino Preferido</p>
-            <label for="destino-cidade"><input type="radio" name="destino" id="destino-cidade"> Cidade</label>
-            <label for="destino-campo"><input type="radio" name="destino" id="destino-campo"> Campo</label>
-            <label for="destino-praia"><input type="radio" name="destino" id="destino-praia"> Praia</label>
-            <label for="destino-montanha"><input type="radio" name="destino" id="destino-montanha"> Montanha</label>
+            <label for="destino-cidade"><input class="form-control form-control-color" type="radio" name="destino" id="destino-cidade"> Cidade</label>
+            <label for="destino-campo"><input class="form-control form-control-color"type="radio" name="destino" id="destino-campo"> Campo</label>
+            <label for="destino-praia"><input class="form-control form-control-color" type="radio" name="destino" id="destino-praia"> Praia</label>
+            <label for="destino-montanha"><input class="form-control form-control-color"type="radio" name="destino" id="destino-montanha"> Montanha</label>
             <br>
             <p id="text-pergunta">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
             <textarea maxlength="500" placeholder="Digite aqui sua resposta!" name="pergunta" id="textarea" cols="30" rows="20"></textarea>
             <p id="text-data">Qual a melhor data para realizar sua viagem?</p>
-            <label for="melhor-data">Data:<input type="date" name=" data" id="melhor-data"></label>
+            <label for="melhor-data">Data:<input class="date-picker-x" type="date" name=" data" id="melhor-data"></label>
             <p id="text-mailing">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
             <label for="check-mailing">Concordo<input type="checkbox" name="mailing" id="check-mailing" value="mailing"></label>
             <p id="text-uso-imagens">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros</p>
-            <label for="check-uso-imagens">Concordo<input required type="checkbox" name="autorizacao" id="check-uso-imagens" value="autorizo"></label>
+            <label for="check-uso-imagens">Concordo<input type="checkbox" name="autorizacao" id="check-uso-imagens" value="autorizo"></label>
             <br>
-            <button id="button-enviar" type="submit">Enviar</button>
+            <button disabled id="button-enviar" type="submit">Enviar</button>
             <button id="button.deletar" type="reset" >Apagar</button>
         </form>
     </div>
