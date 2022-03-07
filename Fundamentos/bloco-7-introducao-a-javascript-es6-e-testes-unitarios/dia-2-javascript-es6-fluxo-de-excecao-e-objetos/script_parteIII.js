@@ -35,20 +35,34 @@ turno: 'noite',
 
 
 const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
-// console.table(allLessons);
+console.table(allLessons);
 
-// const totalEstudantes = () => {
-//     const estudantesLesson1 = allLessons.lesson1.numeroEstudantes;
-//     const estudantesLesson2 = allLessons.lesson2.numeroEstudantes;
-//     const estudantesLesson3 = allLessons.lesson3.numeroEstudantes;
-//     let total = estudantesLesson1 + estudantesLesson2 + estudantesLesson3;
-//     return total
-// }
+const totalEstudantes = () => {
+    const estudantesLesson1 = allLessons.lesson1.numeroEstudantes;
+    const estudantesLesson2 = allLessons.lesson2.numeroEstudantes;
+    const estudantesLesson3 = allLessons.lesson3.numeroEstudantes;
+    let total = estudantesLesson1 + estudantesLesson2 + estudantesLesson3;
+    return total
+}
 
-// console.log(totalEstudantes());
-
-
+console.log(totalEstudantes());
 
 const obterValorChave = (objeto, numero) => Object.values(objeto)[numero];
 
 console.log(obterValorChave(lesson1, 0));
+
+// console.log(Object.entries(lesson1)[2]);
+
+
+// const verificaPar = (objeto, chave, valor) => {
+//     const arrayChaves = Object.entries(objeto);
+//     let resposta = false;
+//         for (let index in arrayChaves){
+//         if (arrayChaves[index][0] === chave && arrayChaves[index][1] === valor){
+//             resposta = true;
+//         } 
+        
+// } return resposta;
+// }
+
+// console.log(verificaPar(lesson1,'turno','manhã'));
