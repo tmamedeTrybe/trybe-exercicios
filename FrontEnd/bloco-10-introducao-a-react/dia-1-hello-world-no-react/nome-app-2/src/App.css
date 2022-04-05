@@ -1,0 +1,10 @@
+.title {
+  color: white;
+  text-align: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgb(93, 176, 93);
+}
