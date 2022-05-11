@@ -1,0 +1,13 @@
+import React from 'react';
+
+class Projetos extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1> Projetos</h1>
+      </div>
+    );
+  }
+}
+
+export default Projetos;
